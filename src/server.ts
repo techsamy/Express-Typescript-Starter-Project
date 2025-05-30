@@ -1,11 +1,10 @@
 import express from "express";
 import { ServerConfig } from "./config";
-const app = express();
-// const PORT = process.env.PORT || 3000; 
+import { createPingRouter } from "./routers/ping.router";
 
-app.get("/ping", (req, res) => {
-    res.send("pong");
-});
+const app = express();
+
+createPingRouter(app);
 
 app.listen(ServerConfig.PORT, () => {
     console.log(`Server running on port ${ServerConfig.PORT}`);
