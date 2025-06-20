@@ -4,6 +4,13 @@ import { pingHanlder } from '../controllers/ping.controller';
 
 const pingRouter = express.Router();
 
-pingRouter.get('/ping', pingHanlder);
+pingRouter.get('/', pingHanlder);
 
+pingRouter.get('/health', (req, res) => {
+    res.status(200).json({ status: 'ok' });
+});
+
+pingRouter.get('/status', (req, res) => {
+    res.status(200).json({ status: 'running' });
+});
 export default pingRouter;

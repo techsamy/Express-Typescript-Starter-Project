@@ -7,7 +7,7 @@ const app = express();
 /* 
     * Registering the ping router and their corresponding routes with out app server object.
 */
-app.use(pingRouter);
+app.use('/ping',pingRouter);
 
 app.listen(ServerConfig.PORT, () => {
     console.log(`Server running on port ${ServerConfig.PORT}`);
