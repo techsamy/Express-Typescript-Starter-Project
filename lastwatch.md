@@ -1,3 +1,3 @@
-14. Making a generic typescript based exprss tarter app 
+16. Adding validation layer through ZOD ✅
 
-Last watch : till 1:39 hour
+Last watch : till 40 - 42 min
