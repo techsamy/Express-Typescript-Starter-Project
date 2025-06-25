@@ -1,3 +1,3 @@
-16. Adding validation layer through ZOD ✅
+17. Adding Error Handling in an express object. 
 
-Last watch : till 40 - 42 min
+Last watch : till 39 min
